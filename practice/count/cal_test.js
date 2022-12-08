@@ -12,7 +12,7 @@ function minus(){
     if(count > 1){
         count--;
         countEl.value = count;
-        total_count_view.value = (total_count_view.value - total_count.value).toLocaleString();
+        total_count_view.value = (total_count.value * countEl.value).toLocaleString();
     }
 }
 
