@@ -1,0 +1,8 @@
+input {
+    border: none;
+    padding: 10px;
+}
+
+#count {
+    width: 15px;
+}
