@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    const arr = [2,3,6,8,10,11,12,100];
+
+    // 값이 짝수 값만 출력해주시오
+    function cb1(val, idx){
+        if(val%2 ===0){
+            console.log(val)
+        }
+    }
+    arr.forEach(cb1);
+
+    console.log('-----');
+
+    // 값이 10이하면 값 *2, 10 초과면 값 그대로 출력
+    function cb2(val,idx){
+        if(val<=10){
+            console.log(val*2)
+        }else(console.log(val))
+    }
+    arr.forEach(cb2);
+
+    console.log('-----');
+    // 위를 삼항식으로
+    function cb3(val,idx){
+        if(val%2){
+            console.log(val<=10 ? val*2 : val)
+        }
+    }
+    console.log('-----');
+    // 짝수값 다 더한 값, 홀수값 다 더한 값 출력
+    // 짝수: 몇
+    // 홀수: 몇
+
+   let odd = 0;
+   let even = 0;
+   arr.forEach(val=>{
+    // if(val%2){
+    //     odd +=  val
+    // } else{ even += val}
+    val%2 ? odd+=val : even+=val
+
+   }) 
+   console.log(`홀수: ${odd}, 짝수:${even}`)
+
+
+
+    // 위를 삼항식으로
+   
+    
+
+</script>
+</html>
